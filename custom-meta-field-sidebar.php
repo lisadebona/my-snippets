@@ -144,7 +144,7 @@ function post_visibility_head_scripts(){ ?>
             top: 1px;
             left: 0;
         }
-        /* This do the trick */
+        /* This is the actual meta box. This will do the trick. */
         .metabox-location-side #display-post-meta-box{display:none!important;}
     </style>
 <?php

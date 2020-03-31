@@ -61,7 +61,7 @@ if($is_post) { ?>
         var selectedVal = ( typeof $("#display-post-meta-box input.cmeta_display_post:checked").val() !== 'undefined' ) ? $("#display-post-meta-box input.cmeta_display_post:checked").val() : '';
         var postmetaForm = $("#display-post-meta-box .components-base-control").clone();
         $(postmetaForm).addClass('display-post-meta-box-control');
-        $(postmetaForm).insertAfter(".edit-post-sidebar .edit-post-post-schedule");
+        $(postmetaForm).insertAfter(".edit-post-sidebar .edit-post-post-schedule"); /* .edit-post-post-schedule => is the <div> class wrapper of 'Publish' option */
         if(selectedVal) {
             $(".display-post-meta-box-control input.cmeta_display_post").attr("checked",true);
         } else {
